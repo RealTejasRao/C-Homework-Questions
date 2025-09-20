@@ -7,6 +7,7 @@ int main(void){
     printf("Enter number: ");
     scanf("%d", &m);
     printf("Solution: %d\n", cube(m));
+    return 0;
 }
 
 int cube(int n)

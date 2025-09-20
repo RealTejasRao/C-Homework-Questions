@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <string.h>
 
 int main(void){
 
@@ -10,18 +9,6 @@ int main(void){
     printf("Second: ");
     scanf("%d", &b);
 
-    if (a>b){
-        printf("%d is bigger.\n", a);
-        return 0;
-    }
-
-    else if (b>a){
-        printf("%d is bigger.\n", b);
-        return 0;
-    }
-
-    else{
-        printf("Both are equal.\n");
-        return 0;
-    }
+    printf(a==b? "Both are Equal\n" : "%d is bigger\n" , a>b ? a:b);
+    return 0;
 }

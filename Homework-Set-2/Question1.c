@@ -12,6 +12,7 @@ int main(void){
     printf("Third number: ");
     scanf("%d", &n3);
     printf("Average: %d\n", avg(n1,n2,n3));
+    return 0;
 }
 
 int avg(int x, int y, int z){

@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <string.h>
+#include <ctype.h>
 
 
 int main(void){
@@ -8,11 +8,7 @@ int main(void){
     printf("Enter char: ");
     scanf("%c", &c);
 
-    if (isdigit(c)) {
-        printf("Digit detected");
-    }
-    
-    else{
-        printf("Not a digit.");
-    }
+    printf("%s", isdigit(c) ? "Digit Detected\n" : "Not a Digit\n");
+    return 0;
+
 }
